@@ -6,12 +6,11 @@ export default StyleSheet.create({
     bottom: 0,
     left: 0,
     right: 0,
-    // borderTopLeftRadius: 15,
-    // borderTopRightRadius: 15,
+    borderTopLeftRadius: 15,
+    borderTopRightRadius: 15,
     overflow: 'hidden',
   },
   bottomTabStyles: {
-    // borderTopLeftRadius: 15,
-    // borderTopRightRadius: 15,
+    
   },
 });

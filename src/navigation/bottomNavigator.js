@@ -1,4 +1,4 @@
-import {View} from 'react-native';
+import {Platform, View} from 'react-native';
 import React from 'react';
 
 import {
@@ -42,6 +42,17 @@ const BottomNavigator = () => {
       screenOptions={{
         tabBarActiveTintColor: '#000000',
         tabBarInactiveTintColor: '#767676',
+        tabBarStyle:{
+          backgroundColor: '#fff',
+          borderTopWidth: 0,
+          elevation: 0,
+          paddingTop: 10,
+          height: Platform.OS === 'android' ? 65 : null,
+        },
+        tabBarLabelStyle: {
+          fontFamily: "Arial",
+          fontSize: 11,
+        },
       }}>
       <BottomTabNavigator.Screen
         options={{

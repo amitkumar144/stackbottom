@@ -1,4 +1,4 @@
-import {Button, StyleSheet, Text, View} from 'react-native';
+import {Button, Platform, StyleSheet, Text, View} from 'react-native';
 import React, {useEffect} from 'react';
 
 const WithInBottomScreen = ({navigation}) => {
@@ -7,10 +7,11 @@ const WithInBottomScreen = ({navigation}) => {
     return () => {
       navigation.getParent()?.setOptions({
         tabBarStyle: {
-          backgroundColor: 'transparent',
+          backgroundColor: '#fff',
           borderTopWidth: 0,
           elevation: 0,
           paddingTop: 10,
+          height: Platform.OS === 'android' ? 65 : null,
         },
       });
     };
