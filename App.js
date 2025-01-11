@@ -12,20 +12,3 @@ const App = () => {
 };
 
 export default App;
-
-
-// useEffect(() => {
-//   checkUserIdEmpty();
-//   navigation.getParent()?.setOptions({ tabBarStyle: { display: 'none' } });
-//   return () => {
-//     navigation.getParent()?.setOptions({
-//       tabBarStyle: {
-//         backgroundColor: Colors.COLOR_TRANSPARENT,
-//         borderTopWidth: 0,
-//         elevation: 0,
-//         paddingTop: Mixins.scaleSize(10),
-//       },
-//     });
-//     isIOS && layoutAnimation();
-//   };
-// }, []);
